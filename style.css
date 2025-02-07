@@ -17,6 +17,10 @@ body{
 
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
+    overflow-x: hidden !important; /* Force-disable horizontal scroll */
+    position: fixed; /* Lock the body from shifting */
+    inset: 0; /* Ensures it covers the entire screen */
+    width: 100vw; /* Prevents body from growing */
 }
 
 @keyframes fadeIn {
@@ -38,7 +42,7 @@ body{
 
 #Yes{
     font-family: "Pacifico", serif;
-    font-size: 30px;
+    font-size: 50px;
 
     background-color: green;
     color: whitesmoke;
@@ -50,7 +54,7 @@ body{
 
 #No{
     font-family: "Pacifico", serif;
-    font-size: 30px;
+    font-size: 50px;
     background-color: red;
     color: bisque;
     padding: 10px;

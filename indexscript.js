@@ -34,7 +34,7 @@ noBtn.addEventListener("click", function () {
         yesBtn.style.width = "100vw"; // Keeps proper width
         yesBtn.style.height = "100vh"; // Keeps proper height
         yesBtn.style.padding = "20px 40px"; // Proper padding
-        yesBtn.style.fontSize = "3rem"; // Large but readable
+        yesBtn.style.fontSize = "80px"; // Large but readable
         yesBtn.textContent = "YES 😍"; // Clear text
 
         noBtn.disabled = true; // Disable No button

@@ -18,6 +18,11 @@ body{
 
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
+    overflow-x: hidden !important; /* Force-disable horizontal scroll */
+    position: fixed; /* Lock the body from shifting */
+    inset: 0; /* Ensures it covers the entire screen */
+    width: 100vw; /* Prevents body from growing */
+    margin: 40px;
 }
 
 @keyframes fadeIn {
@@ -35,7 +40,7 @@ body{
 
 #launchBtn{
     font-family: "Pacifico", serif;
-    font-size: 30px;
+    font-size: 60px;
     background-color: pink;
     color: rgb(255, 0, 115);
     padding: 10px;
@@ -62,7 +67,7 @@ body{
 
 #hrd{
     display: none; /* Hidden by default */
-    font-size: 24px;
+    font-size: 40px;
     background: red;
     color: white;
     padding: 10px;
