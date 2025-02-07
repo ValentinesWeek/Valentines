@@ -16,8 +16,8 @@
     <body>
         
         <div class="container">
-            
-            <div id="heading"> I knew you would say Haha </div>
+
+            <div id="heading"> I knew you would say Yes, Haha </div>
 
             <div id="launchBtn">Happy rose day dear!! (click me)</div>
             <div id="hrd">Thank youu 💓</div>
@@ -40,6 +40,8 @@
                 for (let i = 0; i < explosionSize; i++) { 
                     createEmoji();
                 }
+                launchBtn.textContent="Happy Rose day dearr (with a 100 of them)"
+                hrdBtn.textContent="Thank you (click me)"
             });
 
             function showElement() {
@@ -52,6 +54,8 @@
             function createEmoji() {
                 const emoji = document.createElement("div");
                 emoji.classList.add("emoji");
+                document.body.style.overflowX = "hidden"; 
+                document.body.style.width = "100vw";
 
                 // Massive variety of love emojis (hearts + flowers)
                 const emojis = ["❤️", "🌹", "💕", "💖", "💘", "💞", "💗", "🌸", "💐",  "🌷",  "🌺"];
@@ -84,6 +88,8 @@
                     iterations: Infinity, // NEVER STOPS
                     easing: "ease-in-out"
                 });
+                document.body.style.overflowX = "hidden"; 
+                document.body.style.width = "100vw";
 
                 showElement();
             }
